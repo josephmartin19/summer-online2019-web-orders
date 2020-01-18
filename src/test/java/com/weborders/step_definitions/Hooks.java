@@ -2,6 +2,7 @@ package com.weborders.step_definitions;
 
 import com.weborders.utilities.Driver;
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 
 public class Hooks {
 
@@ -10,5 +11,9 @@ public class Hooks {
     @After
     public void teardown(){
         Driver.close();
+    }
+    @Before
+    public void setup() {
+        Driver.get().manage().window().maximize();
     }
 }
