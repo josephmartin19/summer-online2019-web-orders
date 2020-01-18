@@ -17,7 +17,7 @@ public class Hooks {
         Driver.get().manage().window().maximize();
         System.out.println("conflict");
         System.out.println("hello");
-          System.out.println("added last");
+
         
         
 
